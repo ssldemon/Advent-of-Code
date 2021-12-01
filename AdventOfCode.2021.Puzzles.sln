@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1.Puzzle1", "AdventOfCode.Day1.Puzzle1\AdventOfCode.Day1.Puzzle1.csproj", "{BBA7DFF1-E5F3-4FC1-A81E-A69C7C9DB73E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1.Puzzle2", "AdventOfCode.Day1.Puzzle2\AdventOfCode.Day1.Puzzle2.csproj", "{66754E58-C0FA-40B2-9499-A4834F4A04F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA7DFF1-E5F3-4FC1-A81E-A69C7C9DB73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA7DFF1-E5F3-4FC1-A81E-A69C7C9DB73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA7DFF1-E5F3-4FC1-A81E-A69C7C9DB73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA7DFF1-E5F3-4FC1-A81E-A69C7C9DB73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367506C1-507C-4C01-96D5-5C61ABD96A40}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 80
+		$1.TabsToSpaces = True
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 80
+		$3.TabsToSpaces = True
+		$3.scope = text/plain
+		version = 1.0
+	EndGlobalSection
+EndGlobal
