@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1.Puzzle1",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day1.Puzzle2", "AdventOfCode.Day1.Puzzle2\AdventOfCode.Day1.Puzzle2.csproj", "{66754E58-C0FA-40B2-9499-A4834F4A04F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day2.Puzzle1", "AdventOfCode.Day2.Puzzle1\AdventOfCode.Day2.Puzzle1.csproj", "{1853F0E5-D9CC-49E8-B9E8-54FDE7FA47B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Day2.Puzzle2", "AdventOfCode.Day2.Puzzle2\AdventOfCode.Day2.Puzzle2.csproj", "{0BF8AF06-D675-49E7-8803-A26EE46CE2F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66754E58-C0FA-40B2-9499-A4834F4A04F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1853F0E5-D9CC-49E8-B9E8-54FDE7FA47B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1853F0E5-D9CC-49E8-B9E8-54FDE7FA47B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1853F0E5-D9CC-49E8-B9E8-54FDE7FA47B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1853F0E5-D9CC-49E8-B9E8-54FDE7FA47B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF8AF06-D675-49E7-8803-A26EE46CE2F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF8AF06-D675-49E7-8803-A26EE46CE2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF8AF06-D675-49E7-8803-A26EE46CE2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF8AF06-D675-49E7-8803-A26EE46CE2F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
