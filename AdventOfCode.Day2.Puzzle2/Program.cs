@@ -23,7 +23,6 @@ forward 2 adds 2 to your horizontal position, a total of 15. Because your aim is
 After following these new instructions, you would have a horizontal position of 15 and a depth of 60. (Multiplying these produces 900.)
 
 */
-
 int verticalPosition, horizontalPosition, aim;
 verticalPosition = horizontalPosition = aim = 0;
 
