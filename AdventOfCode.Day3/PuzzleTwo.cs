@@ -55,10 +55,10 @@ public class PuzzleTwo
     public int FinalAnswer()
     {
         string[] diagnosticReport = System.IO.File.ReadAllLines(@"DiagnosticReport.txt");
-        return OxygenGeneratorRating(diagnosticReport) * Co2ScruberRating(diagnosticReport);
+        return OxygenGenerator(diagnosticReport) * CotwoScruber(diagnosticReport);
     }
 
-    int OxygenGeneratorRating(string[] diagnosticReport)
+    int OxygenGenerator(string[] diagnosticReport)
     {
         var lineLength = diagnosticReport[0].Length;
 
@@ -71,7 +71,7 @@ public class PuzzleTwo
         return Convert.ToInt32(diagnosticReport[0], 2);
     }
 
-    int Co2ScruberRating(string[] diagnosticReport)
+    int CotwoScruber(string[] diagnosticReport)
     {
         var lineLength = diagnosticReport[0].Length;
 
