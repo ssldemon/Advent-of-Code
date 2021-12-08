@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using AdventOfCode.Day4;
 
+PuzzleOne puzzleOne = new();
+PuzzleTwo puzzleTwo = new();
+
+Console.Write("Puzzle One: ");
+puzzleOne.FinalAnswer();
+Console.Write($"Puzzle Two: ");
+puzzleTwo.FinalAnswer();

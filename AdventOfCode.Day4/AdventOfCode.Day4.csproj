@@ -5,6 +5,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ReleaseVersion>1.0</ReleaseVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Bingo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
