@@ -1,40 +1,35 @@
 ﻿using System;
-namespace AdventOfCode.Day4
+namespace AdventOfCode.Day4;
+
+public class PuzzleTwo
 {
-    public class PuzzleTwo
+    public static void FinalAnswer()
     {
-        CommonBingoFunctions bingoFunctions = new();
+        List<string[,]> Boards = CommonBingoFunctions.PopulateBingCards();
 
-        public void FinalAnswer()
+        var pulls = CommonBingoFunctions.BingoBallPulls();
+        int finalAnswer = 0;
+        int winCount = 0;
+
+        foreach (var board in Boards)
         {
-            List<string[,]> Boards = bingoFunctions.PopulateBingCards();
-
-            var pulls = bingoFunctions.BingoBallPulls();
-            int finalAnswer = 0;
-            int winCount = 0;
-
-            foreach (var board in Boards)
+            for (int i = 0; i < pulls.Count(); i++)
             {
-                for (int i = 0; i < pulls.Count(); i++)
+                CommonBingoFunctions.PullBingoEntry(board, pulls[i]);
+
+                if (CommonBingoFunctions.CheckForWinner(board) == true)
                 {
-                    bingoFunctions.PullBingoEntry(board, pulls[i]);
-
-                    if (bingoFunctions.CheckForWinner(board) == true)
-                    {
-                        if(i > winCount)
-                        { 
-                            winCount = i;
-                            finalAnswer = bingoFunctions.GetFinalNumbers(board) * Int32.Parse(pulls[i]);
-                        }
-
-                        break;
+                    if(i > winCount)
+                    { 
+                        winCount = i;
+                        finalAnswer = CommonBingoFunctions.GetFinalNumbers(board) * Int32.Parse(pulls[i]);
                     }
+
+                    break;
                 }
-            }            
+            }
+        }            
 
-            Console.WriteLine($"{finalAnswer}");
-        }
-
-       
+        Console.WriteLine($"{finalAnswer}");
     }
 }
