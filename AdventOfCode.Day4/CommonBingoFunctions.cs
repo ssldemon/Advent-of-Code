@@ -107,6 +107,18 @@ namespace AdventOfCode.Day4
             }
         }
 
+        public int GetFinalNumbers(string[,] board)
+        {
+            int numbers = 0;
+
+            foreach (var entry in board)
+            {
+                if (entry != "x") numbers += Int32.Parse(entry);
+            }
+
+            return numbers;
+        }
+
     }
 }
 

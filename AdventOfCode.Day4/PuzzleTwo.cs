@@ -7,13 +7,11 @@ namespace AdventOfCode.Day4
 
         public void FinalAnswer()
         {
-            
             List<string[,]> Boards = bingoFunctions.PopulateBingCards();
 
             var pulls = bingoFunctions.BingoBallPulls();
             int finalAnswer = 0;
             int winCount = 0;
-            int boardWinOn = 0;
 
             foreach (var board in Boards)
             {
@@ -23,12 +21,10 @@ namespace AdventOfCode.Day4
 
                     if (bingoFunctions.CheckForWinner(board) == true)
                     {
-                        boardWinOn = i;
-                        if(boardWinOn > winCount)
+                        if(i > winCount)
                         { 
-                            winCount = boardWinOn;
-                            boardWinOn = 0;
-                            finalAnswer = getNumbers(board) * Int32.Parse(pulls[i]);
+                            winCount = i;
+                            finalAnswer = bingoFunctions.GetFinalNumbers(board) * Int32.Parse(pulls[i]);
                         }
 
                         break;
@@ -36,19 +32,9 @@ namespace AdventOfCode.Day4
                 }
             }            
 
-            Console.WriteLine($"Actual final answer: {finalAnswer}");
+            Console.WriteLine($"{finalAnswer}");
         }
 
-        private int getNumbers(string[,] board)
-        {
-            int numbers = 0;
-
-            foreach (var entry in board)
-            {
-                if (entry != "x") numbers += Int32.Parse(entry);
-            }
-
-            return numbers;
-        }
+       
     }
 }

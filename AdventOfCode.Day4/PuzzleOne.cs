@@ -27,7 +27,7 @@ namespace AdventOfCode.Day4
                         }
                         finalAnswer = finalAnswer * Int32.Parse(pulls[pullCount]);
                         test = false;
-                        Console.WriteLine($"Final Answer: {finalAnswer}");
+                        Console.WriteLine($"{finalAnswer}");
                         break;
                     }
                 }
